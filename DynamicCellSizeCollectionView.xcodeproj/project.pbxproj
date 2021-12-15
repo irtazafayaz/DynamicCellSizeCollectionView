@@ -49,6 +49,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19741E91276A305700D196D6 /* Data Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Managers";
+			sourceTree = "<group>";
+		};
+		19741E92276A306300D196D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				19AFC7682768F6220088673B /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		19741E93276A306900D196D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		19741E94276A307300D196D6 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				19AFC74B27688D7A0088673B /* AppDelegate.swift */,
+				19AFC74D27688D7A0088673B /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		19741E95276A307E00D196D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				19AFC74F27688D7A0088673B /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		19741E96276A309200D196D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				19AFC75127688D7A0088673B /* Main.storyboard */,
+				19AFC75627688D7E0088673B /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		19741E97276A309900D196D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19AFC75427688D7E0088673B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		19AFC73F27688D7A0088673B = {
 			isa = PBXGroup;
 			children = (
@@ -68,15 +124,15 @@
 		19AFC74A27688D7A0088673B /* DynamicCellSizeCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				19741E93276A306900D196D6 /* Extensions */,
+				19741E92276A306300D196D6 /* Models */,
+				19741E91276A305700D196D6 /* Data Managers */,
 				19AFC75F2768C2C50088673B /* Cell */,
-				19AFC74B27688D7A0088673B /* AppDelegate.swift */,
-				19AFC74D27688D7A0088673B /* SceneDelegate.swift */,
-				19AFC74F27688D7A0088673B /* ViewController.swift */,
-				19AFC75127688D7A0088673B /* Main.storyboard */,
-				19AFC75427688D7E0088673B /* Assets.xcassets */,
-				19AFC75627688D7E0088673B /* LaunchScreen.storyboard */,
+				19741E94276A307300D196D6 /* Delegates */,
+				19741E95276A307E00D196D6 /* Controllers */,
+				19741E96276A309200D196D6 /* Views */,
+				19741E97276A309900D196D6 /* Resources */,
 				19AFC75927688D7E0088673B /* Info.plist */,
-				19AFC7682768F6220088673B /* Model.swift */,
 			);
 			path = DynamicCellSizeCollectionView;
 			sourceTree = "<group>";
