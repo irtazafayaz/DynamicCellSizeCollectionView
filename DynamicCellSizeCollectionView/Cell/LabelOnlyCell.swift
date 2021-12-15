@@ -17,8 +17,8 @@ class LabelOnlyCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         
-//        self.parentView.translatesAutoresizingMaskIntoConstraints = false
-//        self.parentView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
+        self.parentView.translatesAutoresizingMaskIntoConstraints = false
+        self.parentView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width).isActive = true
     }
 
 }

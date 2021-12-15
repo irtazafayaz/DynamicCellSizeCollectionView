@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     var model = [Model]()
     @IBOutlet weak var collectionView: UICollectionView!
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         model.append(Model(imgName: "ic_small", description: Constants.smallText.rawValue))
         model.append(Model(imgName: "", description: Constants.longText.rawValue))
         model.append(Model(imgName: "ic_big", description: Constants.smallText.rawValue))
-
+        
     }
     
     func setupCollectionView() {
@@ -40,8 +40,8 @@ class ViewController: UIViewController {
             collectionViewLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         }
     }
-
-
+    
+    
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -51,27 +51,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if indexPath.row % 2 == 0 {
-            
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LabelOnlyCell", for: indexPath) as? LabelOnlyCell else {
-                return LabelOnlyCell()
-            }
-            cell.labelHeading.text = model[indexPath.row].description
-            return cell
-            
-        } else {
-            
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LabelImageCell", for: indexPath) as? LabelImageCell else {
-                return LabelImageCell()
-            }
-            cell.labelDesc.text = model[indexPath.row].description
-            cell.imageView.image = UIImage(named: model[indexPath.row].imgName)
-            return cell
-            
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LabelOnlyCell", for: indexPath) as? LabelOnlyCell else {
+            return LabelOnlyCell()
         }
-        
-       
+        cell.labelHeading.text = model[indexPath.row].description
+        return cell 
     }
     
     
