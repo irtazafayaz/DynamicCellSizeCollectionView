@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192EA82E27870B5D002A073B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192EA82D27870B5D002A073B /* Movie.swift */; };
+		192EA83027884D35002A073B /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192EA82F27884D35002A073B /* MovieManager.swift */; };
+		192EA83227885A50002A073B /* HighlightedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192EA83127885A50002A073B /* HighlightedCell.swift */; };
+		192EA834278C80AF002A073B /* PreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192EA833278C80AF002A073B /* PreviewCell.swift */; };
+		192EA838278C80D0002A073B /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192EA837278C80D0002A073B /* MovieCell.swift */; };
+		192EA83A278C8773002A073B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192EA839278C8773002A073B /* UIImageViewExtension.swift */; };
 		19AFC74C27688D7A0088673B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFC74B27688D7A0088673B /* AppDelegate.swift */; };
 		19AFC74E27688D7A0088673B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFC74D27688D7A0088673B /* SceneDelegate.swift */; };
-		19AFC75027688D7A0088673B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFC74F27688D7A0088673B /* ViewController.swift */; };
+		19AFC75027688D7A0088673B /* MovieFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AFC74F27688D7A0088673B /* MovieFeedViewController.swift */; };
 		19AFC75327688D7A0088673B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19AFC75127688D7A0088673B /* Main.storyboard */; };
 		19AFC75527688D7E0088673B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19AFC75427688D7E0088673B /* Assets.xcassets */; };
 		19AFC75827688D7E0088673B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19AFC75627688D7E0088673B /* LaunchScreen.storyboard */; };
@@ -22,10 +28,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		192EA82D27870B5D002A073B /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		192EA82F27884D35002A073B /* MovieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
+		192EA83127885A50002A073B /* HighlightedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightedCell.swift; sourceTree = "<group>"; };
+		192EA833278C80AF002A073B /* PreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCell.swift; sourceTree = "<group>"; };
+		192EA837278C80D0002A073B /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		192EA839278C8773002A073B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		19AFC74827688D7A0088673B /* DynamicCellSizeCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicCellSizeCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19AFC74B27688D7A0088673B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19AFC74D27688D7A0088673B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		19AFC74F27688D7A0088673B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19AFC74F27688D7A0088673B /* MovieFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFeedViewController.swift; sourceTree = "<group>"; };
 		19AFC75227688D7A0088673B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19AFC75427688D7E0088673B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19AFC75727688D7E0088673B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +64,7 @@
 		19741E91276A305700D196D6 /* Data Managers */ = {
 			isa = PBXGroup;
 			children = (
+				192EA82F27884D35002A073B /* MovieManager.swift */,
 			);
 			path = "Data Managers";
 			sourceTree = "<group>";
@@ -60,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				19AFC7682768F6220088673B /* Model.swift */,
+				192EA82D27870B5D002A073B /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -67,6 +81,7 @@
 		19741E93276A306900D196D6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				192EA839278C8773002A073B /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -83,7 +98,7 @@
 		19741E95276A307E00D196D6 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				19AFC74F27688D7A0088673B /* ViewController.swift */,
+				19AFC74F27688D7A0088673B /* MovieFeedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -145,6 +160,9 @@
 				19AFC7642768F4BC0088673B /* LabelImageCell.swift */,
 				19AFC7652768F4BC0088673B /* LabelImageCell.xib */,
 				19AFC76A2768F6E30088673B /* Constants.swift */,
+				192EA83127885A50002A073B /* HighlightedCell.swift */,
+				192EA833278C80AF002A073B /* PreviewCell.swift */,
+				192EA837278C80D0002A073B /* MovieCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -224,11 +242,17 @@
 			files = (
 				19AFC7662768F4BC0088673B /* LabelImageCell.swift in Sources */,
 				19AFC7622768C2E60088673B /* LabelOnlyCell.swift in Sources */,
-				19AFC75027688D7A0088673B /* ViewController.swift in Sources */,
+				192EA838278C80D0002A073B /* MovieCell.swift in Sources */,
+				19AFC75027688D7A0088673B /* MovieFeedViewController.swift in Sources */,
+				192EA834278C80AF002A073B /* PreviewCell.swift in Sources */,
 				19AFC7692768F6220088673B /* Model.swift in Sources */,
 				19AFC76B2768F6E30088673B /* Constants.swift in Sources */,
 				19AFC74C27688D7A0088673B /* AppDelegate.swift in Sources */,
+				192EA82E27870B5D002A073B /* Movie.swift in Sources */,
+				192EA83027884D35002A073B /* MovieManager.swift in Sources */,
 				19AFC74E27688D7A0088673B /* SceneDelegate.swift in Sources */,
+				192EA83A278C8773002A073B /* UIImageViewExtension.swift in Sources */,
+				192EA83227885A50002A073B /* HighlightedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
